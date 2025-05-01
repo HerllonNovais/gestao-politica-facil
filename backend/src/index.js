@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
+const electorsRoute = require('./routes/electors');
 
 dotenv.config();
 const app = express();
@@ -8,6 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.use('/api/electors', electorsRoute);
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/eleitores', require('./routes/eleitores'));
 
