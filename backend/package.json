@@ -1,3 +1,4 @@
+npm install multer xlsx
 {
   "name": "gestao-politica-backend",
   "version": "1.0.0",
