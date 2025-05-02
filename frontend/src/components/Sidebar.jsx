@@ -6,6 +6,7 @@ const Sidebar = () => (
     <h1 className="text-xl font-bold mb-8">Gestão Política</h1>
     <nav className="flex flex-col gap-4">
       <Link to="/dashboard" className="hover:underline">Dashboard</Link>
+      <Link to="/importar-eleitores">Importar Eleitores</Link>
       <button
         onClick={() => {
           removeToken();
