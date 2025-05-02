@@ -14,6 +14,7 @@ function App() {
           element={<ProtectedRoute><Dashboard /></ProtectedRoute>}
         />
         <Route path="*" element={<NotFound />} />
+        <Route path="/importar-eleitores" element={<ElectorsImport />} />
       </Routes>
     </BrowserRouter>
   );
